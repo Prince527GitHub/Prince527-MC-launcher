@@ -1,1 +1,1 @@
-# Prince527-s-MC-launcher
+# Prince527-MC-launcher
