@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Prince527's Lite Hypixel Pack</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="midle-div">
+    <div class="card text-white bg-dark mb-3" class="card text-white bg-dark mb-3">
+      <div class="card-body" id="account_type">
+
+        <button type="button" class="btn btn-secondary" id="mc-micro-login">Login with Microsoft</button>
+        <button type="button" class="btn btn-secondary" id="mc-mojan-login">Login with mojang</button>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="./assets/js/script.js"></script>
+<script>
+  const show = () => {
+    let password = document.getElementById("password");
+    let visibility = document.querySelector(".visibility");
+    if (password.type === "password") {
+      password.type = "text";
+      visibility.style.color = "rgb(128, 0, 122)";
+    } else {
+      password.type = "password";
+      visibility.style.color = "#fff";
+    }
+  };
+</script>
+
+</html>
