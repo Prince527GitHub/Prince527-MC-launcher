@@ -1,8 +1,8 @@
 {
   "name": "mc-launcher",
-  "productName": "Prince527's Lite Hypixel Pack",
+  "productName": "Prince527's MC Launcher",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "It's a launcher for all of Prince527's MC packs.",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -24,7 +24,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "Prince527's Lite Hypixel Pack"
+            "name": "Prince527-MC-Launcher"
           }
         },
         {
@@ -45,13 +45,15 @@
     }
   },
   "dependencies": {
-    "@electron/remote": "^2.0.1",
+    "7zip-min": "^1.4.0",
     "axios": "^0.24.0",
+    "electron-json-storage": "^4.5.0",
     "electron-squirrel-startup": "^1.0.0",
     "minecraft-launcher-core": "^3.16.8",
     "msmc": "^2.2.3",
     "node-fetch": "^2.6.1",
-    "quick-encrypt": "^1.0.8"
+    "quick-encrypt": "^1.0.8",
+    "rapid-downloader": "^1.2.6"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.61",

@@ -3,22 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Prince527's Lite Hypixel Pack</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Prince527's MC launcher</title>
+  <link rel="stylesheet" href="./assets/css/style.min.css">
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <div class="midle-div">
+  <div class="midle-div main" id="midle-div-html-code">
     <div class="card text-white bg-dark mb-3" class="card text-white bg-dark mb-3">
       <div class="card-body" id="account_type">
 
-        <button type="button" class="btn btn-secondary" id="mc-micro-login">Login with Microsoft</button>
-        <button type="button" class="btn btn-secondary" id="mc-mojan-login">Login with mojang</button>
+        <h1>Prince527's MC launcher</h1>
 
       </div>
     </div>
+
+  </div>
+
+  <div class="sidenav" style="width:25%" id="dropdown-select-html"></div>
+
+  <div id="options-btn-html-div">
+    <button class="btn btn-secondary material-icons user icon" style="position:absolute;bottom:15px;right:15px;"
+      id="options-btn-html">settings</button>
   </div>
 
 </body>
@@ -37,5 +45,7 @@
     }
   };
 </script>
+
+<div id="toast-error-set"></div>
 
 </html>
