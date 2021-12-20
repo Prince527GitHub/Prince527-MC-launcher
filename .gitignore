@@ -87,3 +87,7 @@ typings/
 
 # Electron-Forge
 out/
+
+src/assets/java/
+
+src/assets/temp/

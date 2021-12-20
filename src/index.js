@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, Tray, Menu } = require('electron');
+const { app, BrowserWindow, ipcMain, Tray, Menu, dialog } = require('electron');
 const path = require('path');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -21,7 +21,6 @@ const createWindow = () => {
       nodeIntegrationInWorker: true,
       contextIsolation: false,
       enableRemoteModule: true,
-      preload: `${__dirname}/assets/js/preload.js`,
     }
   });
 
@@ -79,6 +78,25 @@ ipcMain.handle('hide-app', () => {
   mainWindow.hide();
 });
 
+ipcMain.handle("open-file-java", async() => {
+  const file = await dialog.showOpenDialog({
+    filters: [{
+        name: "Java",
+        extensions: ["exe"]
+    }],
+    properties: ["openFile"]
+  });
+  if (file.canceled) return null;
+  return file.filePaths;
+});
+
+ipcMain.handle("open-folder-dialog", async() => {
+  const files = await dialog.showOpenDialog({
+      properties: ['openDirectory']
+  });
+  if (files.canceled) return null;
+  return files.filePaths;
+});
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
@@ -88,7 +106,6 @@ async function discordPresence() {
   const fs = require('fs');
   if(fs.existsSync(`${__dirname}/assets/json/settings/rpc.json`)) {
     fs.readFile(`${__dirname}/assets/json/settings/rpc.json`, 'utf8', function (err, data) {
-      console.log("Discord presence read file");
       if (err) return console.log(err);
       const newData = JSON.parse(data);
       if (newData.option === true) return discordRPC();
