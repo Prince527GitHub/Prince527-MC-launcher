@@ -4,7 +4,7 @@
   <img src="https://github.com/Prince527GitHub/Prince527-MC-launcher/blob/release/src/assets/image/logo.png?raw=true" width="256" height="256">
 </p>
 
-## Screenshots
+## Screenshots from 2.0
 
 ![0](https://api.serversmp.xyz/upload/prince/Prince527s_MC_Launcher_FkQo9Mf86t.png)
 
