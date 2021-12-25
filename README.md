@@ -1,5 +1,3 @@
-<h1 align="center">Working on version 3.0 go <a href="https://github.com/Prince527GitHub/Prince527-MC-launcher/projects/1">here</a> to get more info on ver 3.0</h1>
-
 <h1 align="center">Prince527 MC launcher</h1>
 
 <p align="center">
