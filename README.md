@@ -4,16 +4,16 @@
   <img src="https://github.com/Prince527GitHub/Prince527-MC-launcher/blob/release/src/assets/image/logo.png?raw=true" width="256" height="256">
 </p>
 
-## Screenshots from 2.0
+## Screenshots from 3.0
 
-![0](https://api.serversmp.xyz/upload/prince/Prince527s_MC_Launcher_FkQo9Mf86t.png)
+![0](https://serversmp.xyz/web/mclauncher/assets/image/main-menu.jpg)
 
-![1](https://api.serversmp.xyz/upload/prince/Prince527s_MC_Launcher_4NK3rgnEt7.png)
+![1](https://serversmp.xyz/web/mclauncher/assets/image/offline-menu.jpg)
 
-![2](https://api.serversmp.xyz/upload/prince/Prince527s_MC_Launcher_3xCF48RKAk.png)
+![2](https://serversmp.xyz/web/mclauncher/assets/image/login-menu.jpg)
 
-![3](https://api.serversmp.xyz/upload/prince/Prince527s_MC_Launcher_BmU30x7OUh.png)
+![3](https://serversmp.xyz/web/mclauncher/assets/image/microsoft-login.jpg)
 
-![4](https://api.serversmp.xyz/upload/prince/Prince527s_MC_Launcher_bxYnVQPjjI.png)
+![4](https://serversmp.xyz/web/mclauncher/assets/image/mojang-login.jpg)
 
-![5](https://api.serversmp.xyz/upload/prince/Prince527s_MC_Launcher_MsNzTJssZU.png)
+![5](https://serversmp.xyz/web/mclauncher/assets/image/settings-menu.jpg)
