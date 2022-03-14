@@ -1,0 +1,193 @@
+body {
+    background-image: url(../image/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+* {
+    font-family: minecraftmedium;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fffff2;
+}
+
+.btn {
+    font-family: minecraftmedium;
+    background-color: #2e74e6;
+    border: 2px solid #2e74e6;
+    transition-duration: .5s;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fffff2;
+}
+
+.buttons {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.btn:hover {
+    background-color: #1b6bec;
+    color: #fffff2;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+@supports (scrollbar-color:#988f81 #2d2d2d) {
+    * {
+        scrollbar-width: none;
+    }
+}
+
+.midle-div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+}
+
+input[type=text] {
+    background-color: #0c0b1a;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #fff;
+    resize: none;
+}
+
+input[type=number] {
+    background-color: #0c0b1a;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #fff;
+    resize: none;
+}
+
+input[type=password] {
+    background-color: #0c0b1a;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #fff;
+    resize: none;
+}
+
+input[type=submit] {
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.link_text {
+    color: #20b2aa;
+}
+
+.link_text:hover {
+    color: #add8e6;
+    cursor: pointer;
+}
+
+.visibility:hover {
+    cursor: pointer;
+}
+
+.input-container {
+    margin-bottom: 15px;
+    display: flex;
+    width: 100%;
+}
+
+.icon {
+    text-align: center;
+    min-width: 50px;
+    padding: 10px;
+    color: #fff;
+}
+
+.input-field {
+    padding: 10px;
+    width: 100%;
+    outline: 0;
+}
+
+.input-field:focus {
+    border: 2px solid #1e90ff;
+}
+
+.material-icons {
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Material Icons';
+    letter-spacing: normal;
+    display: inline-block;
+    text-transform: none;
+    white-space: nowrap;
+    font-style: normal;
+    word-wrap: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    direction: ltr;
+}
+
+@font-face {
+    src: url(../font/minecraft-webfont.woff2) format('woff2'), url(../font/minecraft-webfont.woff) format('woff');
+    font-family: minecraftmedium;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+
+@font-face {
+    src: url(../font/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.sidenav {
+    background-color: #212529;
+    overflow-x: hidden;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+    width: 160px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: #818181;
+    font-size: 18px;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #fff;
+}
+
+.main {
+    margin-left: 160px;
+    padding: 0 10px;
+}
+
+@media screen and (max-height:450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
