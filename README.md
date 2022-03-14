@@ -1,3 +1,3 @@
-# Prince527 MC launcher Server
+<h1 align="center">Prince527 MC launcher Server</h1>
 
-This is the download server for the mc launcher!
+<p align="center">This is the download server for the mc launcher!</p>
