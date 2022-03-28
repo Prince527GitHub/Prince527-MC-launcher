@@ -4,16 +4,4 @@
   <img src="https://github.com/Prince527GitHub/Prince527-MC-launcher/blob/release/src/assets/image/logo.png?raw=true" width="256" height="256">
 </p>
 
-## Screenshots from 3.0
-
-![0](https://serversmp.xyz/web/mclauncher/assets/image/main-menu.jpg)
-
-![1](https://serversmp.xyz/web/mclauncher/assets/image/offline-menu.jpg)
-
-![2](https://serversmp.xyz/web/mclauncher/assets/image/login-menu.jpg)
-
-![3](https://serversmp.xyz/web/mclauncher/assets/image/microsoft-login.jpg)
-
-![4](https://serversmp.xyz/web/mclauncher/assets/image/mojang-login.jpg)
-
-![5](https://serversmp.xyz/web/mclauncher/assets/image/settings-menu.jpg)
+This is the auto-updater for the launcher!

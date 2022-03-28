@@ -3,49 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Prince527's MC launcher</title>
-  <link rel="stylesheet" href="./assets/css/style.min.css">
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-  <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+  <title>Prince527's MC Launcher (AutoUpdate)</title>
 </head>
 
 <body>
-  <div class="midle-div main" id="midle-div-html-code">
-    <div class="card text-white bg-dark mb-3" class="card text-white bg-dark mb-3">
-      <div class="card-body" id="account_type">
-
-        <h1>Prince527's MC launcher</h1>
-
-      </div>
-    </div>
-
-  </div>
-
-  <div class="sidenav" style="width:25%" id="dropdown-select-html"></div>
-
-  <div id="options-btn-html-div">
-    <button class="btn btn-secondary material-icons user icon" style="position:absolute;bottom:15px;right:15px;"
-      id="options-btn-html">settings</button>
-  </div>
-
+  <div class="control"></div>
+  <label for="progress" id="label"></label>
+  <progress id="progress" max="100" value="0"></progress>
 </body>
 
-<script defer src="./assets/js/script.js"></script>
-<script>
-  const show = () => {
-    let password = document.getElementById("password");
-    let visibility = document.querySelector(".visibility");
-    if (password.type === "password") {
-      password.type = "text";
-      visibility.style.color = "rgb(128, 0, 122)";
-    } else {
-      password.type = "password";
-      visibility.style.color = "#fff";
-    }
-  };
-</script>
-
-<div id="toast-error-set"></div>
+<script src="./script.js"></script>
 
 </html>

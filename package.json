@@ -1,8 +1,8 @@
 {
-  "name": "mc-launcher",
-  "productName": "Prince527's MC Launcher",
+  "name": "auto-updater",
+  "productName": "auto-updater",
   "version": "1.0.0",
-  "description": "It's a launcher for all of Prince527's MC packs.",
+  "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -24,7 +24,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "Prince527-MC-Launcher"
+            "name": "auto_updater"
           }
         },
         {
@@ -45,16 +45,8 @@
     }
   },
   "dependencies": {
-    "7zip-min": "^1.4.0",
-    "axios": "^0.24.0",
-    "discord-rpc": "^4.0.1",
-    "electron-log": "^4.4.1",
     "electron-squirrel-startup": "^1.0.0",
-    "minecraft-launcher-core": "^3.16.10",
-    "msmc": "^2.2.3",
-    "node-downloader-helper": "^1.0.19",
-    "node-fetch": "^2.6.1",
-    "quick-encrypt": "^1.0.8"
+    "uaup-js": "^0.0.22"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.61",
@@ -62,6 +54,6 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.61",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.61",
     "@electron-forge/maker-zip": "^6.0.0-beta.61",
-    "electron": "15.3.1"
+    "electron": "17.2.0"
   }
 }
