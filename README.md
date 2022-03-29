@@ -4,6 +4,10 @@
   <img src="https://github.com/Prince527GitHub/Prince527-MC-launcher/blob/release/src/assets/image/logo.png?raw=true" width="256" height="256">
 </p>
 
+## Setup
+
+So you could download the [latest release]() or you could download the [auto updater](https://github.com/Prince527GitHub/Prince527-MC-launcher/blob/auto-updater/Prince527's%20MC%20launcher%20Setup%201.0.0.exe?raw=true)
+
 ## Screenshots from 3.0
 
 ![0](https://serversmp.xyz/web/mclauncher/assets/image/main-menu.jpg)
