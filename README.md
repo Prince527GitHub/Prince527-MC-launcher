@@ -6,7 +6,8 @@
 
 ## Setup
 
-So you could download the [latest release](https://github.com/Prince527GitHub/Prince527-MC-launcher/releases/latest) or you could download the [auto updater](https://github.com/Prince527GitHub/Prince527-MC-launcher/blob/auto-updater/Prince527's%20MC%20launcher%20Setup%201.0.0.exe?raw=true)
+So you could download the [latest release](https://github.com/Prince527GitHub/Prince527-MC-launcher/releases/latest) or you could download the [auto updater](https://github.com/Prince527GitHub/Prince527-MC-launcher/blob/auto-updater/Prince527's%20MC%20launcher%20Setup%201.0.0.exe?raw=true).
+
 *I recommend the auto updater.* 
 
 ## Screenshots from 3.0
