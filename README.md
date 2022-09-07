@@ -2,6 +2,6 @@
 
 <p align="center">
   <img src="https://github.com/Prince527GitHub/Prince527-MC-launcher/blob/release/src/assets/image/logo.png?raw=true" width="256" height="256">
-
-  This is the auto-updater for the launcher!
 </p>
+
+<p align="center">This is the auto-updater for the launcher!</p>
