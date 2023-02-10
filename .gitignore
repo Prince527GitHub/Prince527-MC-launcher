@@ -88,6 +88,9 @@ typings/
 # Electron-Forge
 out/
 
-src/assets/java/
+src/assets/java/8/
+src/assets/java/17/
 
 src/assets/temp/
+
+.vscode/

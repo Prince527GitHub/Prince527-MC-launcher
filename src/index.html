@@ -25,26 +25,13 @@
   <div class="sidenav" style="width:25%" id="dropdown-select-html"></div>
 
   <div id="options-btn-html-div">
-    <button class="btn btn-secondary material-icons user icon" style="position:absolute;bottom:15px;right:15px;"
-      id="options-btn-html">settings</button>
+    <button class="btn btn-secondary material-icons user icon" style="position:absolute;bottom:15px;right:15px;" id="options-btn-html">settings</button>
   </div>
+  <div id="folder-btn-html-div"></div>
 
 </body>
 
 <script defer src="./assets/js/script.js"></script>
-<script>
-  const show = () => {
-    let password = document.getElementById("password");
-    let visibility = document.querySelector(".visibility");
-    if (password.type === "password") {
-      password.type = "text";
-      visibility.style.color = "rgb(128, 0, 122)";
-    } else {
-      password.type = "password";
-      visibility.style.color = "#fff";
-    }
-  };
-</script>
 
 <div id="toast-error-set"></div>
 

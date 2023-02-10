@@ -1,15 +1,15 @@
 const { app, BrowserWindow, ipcMain, Tray, Menu, dialog } = require('electron');
 const path = require('path');
 
-// Handle creating/removing shortcuts on Windows when installing/uninstalling.
-if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
+require('electron-store').initRenderer();
+
+if (require('electron-squirrel-startup')) {
   app.quit();
 }
 
 let tray;
 let mainWindow;
 const createWindow = () => {
-  // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
@@ -24,13 +24,10 @@ const createWindow = () => {
     }
   });
 
-  // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
 
-  // Open the DevTools.
   mainWindow.webContents.openDevTools();
 
-  // System Tray
   tray = new Tray(`${__dirname}/assets/image/logo.png`);
   const contextMenu = Menu.buildFromTemplate([
     { label: 'Show/Hide', click: () => { if (mainWindow.isVisible()) { mainWindow.hide(); } else { mainWindow.show(); } } },
@@ -48,14 +45,8 @@ const createWindow = () => {
   
 };
 
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
-// Some APIs can only be used after this event occurs.
 app.on('ready', createWindow);
 
-// Quit when all windows are closed, except on macOS. There, it's common
-// for applications and their menu bar to stay active until the user quits
-// explicitly with Cmd + Q.
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit();
@@ -63,20 +54,14 @@ app.on('window-all-closed', () => {
 });
 
 app.on('activate', () => {
-  // On OS X it's common to re-create a window in the app when the
-  // dock icon is clicked and there are no other windows open.
   if (BrowserWindow.getAllWindows().length === 0) {
     createWindow();
   }
 });
 
-ipcMain.handle('quit-app', () => {
-  app.quit();
-});
+ipcMain.handle('quit-app', () => app.quit());
 
-ipcMain.handle('hide-app', () => {
-  mainWindow.hide();
-});
+ipcMain.handle('hide-app', () => mainWindow.hide());
 
 ipcMain.handle("open-file-java", async() => {
   const file = await dialog.showOpenDialog({
@@ -98,33 +83,33 @@ ipcMain.handle("open-folder-dialog", async() => {
   return files.filePaths;
 });
 
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and import them here.
-
-// discord rich presence
-async function discordPresence() {
-  const fs = require('fs');
-  if(fs.existsSync(`${__dirname}/assets/json/settings/rpc.json`)) {
-    fs.readFile(`${__dirname}/assets/json/settings/rpc.json`, 'utf8', function (err, data) {
-      if (err) return console.log(err);
-      const newData = JSON.parse(data);
-      if (newData.option === true) return discordRPC();
+ipcMain.handle("login", async() => {
+  const msmc = require("msmc");
+  try {
+    const result = await msmc.fastLaunch("electron", async(update) => {
+        console.log("CallBack!!!!!");
+        console.log(update);
     });
-  } else return discordRPC();
-}
+    if (msmc.errorCheck(result)) return null;
+    return msmc.getMCLC().getAuth(result);
+  } catch (e) {
+    return null;
+  }
+});
+
+app.on('ready', discordRPC);
 
 async function discordRPC() {
+  const check = await mainWindow.webContents.executeJavaScript("localStorage.getItem('rpc')");
+  if (!check) return;
+
   const DiscordRPC = require('discord-rpc');
 
-  const clientId = '913570472409596006';
-  
   const rpc = new DiscordRPC.Client({ transport: 'ipc' });
-  
+
   async function setActivity() {
-    if (!rpc || !mainWindow) {
-      return;
-    }
-  
+    if (!rpc || !mainWindow) return;
+
     rpc.setActivity({
       details: "A launcher for most of Prince527's MC packs and more!",
       state: "Using the launcher!",
@@ -135,16 +120,14 @@ async function discordRPC() {
       instance: false,
     });
   }
-  
+
   rpc.on('ready', () => {
     setActivity();
-  
+
     setInterval(() => {
       setActivity();
     }, 15e3);
   });
-  
-  rpc.login({ clientId }).catch(console.error);
-}
 
-discordPresence();
+  rpc.login({ clientId: '956921286817378326' }).catch(console.error);
+}

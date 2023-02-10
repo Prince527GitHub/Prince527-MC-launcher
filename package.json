@@ -1,7 +1,7 @@
 {
   "name": "mc-launcher",
   "productName": "Prince527's MC Launcher",
-  "version": "1.0.0",
+  "version": "4.1.6",
   "description": "It's a launcher for all of Prince527's MC packs.",
   "main": "src/index.js",
   "scripts": {
@@ -9,7 +9,8 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "echo \"No linting configured\"",
+    "build-installer": "electron-builder"
   },
   "keywords": [],
   "author": {
@@ -17,6 +18,11 @@
     "email": "75485262+Prince527GitHub@users.noreply.github.com"
   },
   "license": "MIT",
+  "build": {
+    "appId": "prince.mc.launcher",
+    "compression": "maximum",
+    "asar": false
+  },
   "config": {
     "forge": {
       "packagerConfig": {},
@@ -45,23 +51,23 @@
     }
   },
   "dependencies": {
-    "7zip-min": "^1.4.0",
-    "axios": "^0.24.0",
+    "7zip-min": "^1.4.3",
+    "decompress": "^4.2.1",
     "discord-rpc": "^4.0.1",
-    "electron-log": "^4.4.1",
+    "electron-log": "^4.4.8",
     "electron-squirrel-startup": "^1.0.0",
-    "minecraft-launcher-core": "^3.16.10",
-    "msmc": "^2.2.3",
-    "node-downloader-helper": "^1.0.19",
-    "node-fetch": "^2.6.1",
-    "quick-encrypt": "^1.0.8"
+    "electron-store": "^8.1.0",
+    "minecraft-launcher-core": "^3.16.16",
+    "msmc": "^3.1.3",
+    "node-downloader-helper": "^2.1.5"
   },
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.0-beta.61",
-    "@electron-forge/maker-deb": "^6.0.0-beta.61",
-    "@electron-forge/maker-rpm": "^6.0.0-beta.61",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.61",
-    "@electron-forge/maker-zip": "^6.0.0-beta.61",
-    "electron": "15.3.1"
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0"
   }
 }

@@ -1,0 +1,137 @@
+{
+    "instances": [
+        {
+            "name": "1.19.2",
+            "version": "1.19.2",
+            "modded": null,
+            "url": null,
+            "folder": false
+        },
+        {
+            "name": "1.19.2 Pack",
+            "version": "1.19.2",
+            "modded": "forge",
+            "url": "https://prince527github.github.io/Prince527-MC-launcher/files/versions/1.19.2%20pack.json",
+            "folder": false
+        },
+        {
+            "name": "1.18.2",
+            "version": "1.18.2",
+            "modded": null,
+            "url": null,
+            "folder": false
+        },
+        {
+            "name": "1.18.1 Pack",
+            "version": "1.18.1",
+            "modded": "fabric",
+            "url": "https://prince527github.github.io/Prince527-MC-launcher/files/versions/1.18.1%20pack.json",
+            "folder": false
+        },
+        {
+            "name": "1.17.1",
+            "version": "1.17.1",
+            "modded": null,
+            "url": null,
+            "folder": false
+        },
+        {
+            "name": "1.16.5",
+            "version": "1.16.5",
+            "modded": null,
+            "url": null,
+            "folder": false
+        },
+        {
+            "name": "1.15.2",
+            "version": "1.15.2",
+            "modded": null,
+            "url": null,
+            "folder": false
+        },
+        {
+            "name": "1.14.4",
+            "version": "1.14.4",
+            "modded": null,
+            "url": null,
+            "folder": false
+        },
+        {
+            "name": "1.13.2",
+            "version": "1.13.2",
+            "modded": null,
+            "url": null,
+            "folder": false
+        },
+        {
+            "name": "1.12.2",
+            "version": "1.12.2",
+            "modded": null,
+            "url": null,
+            "folder": false
+        },
+        {
+            "name": "1.11.2",
+            "version": "1.11.2",
+            "modded": null,
+            "url": null,
+            "folder": false
+        },
+        {
+            "name": "1.10.2",
+            "version": "1.10.2",
+            "modded": null,
+            "url": null,
+            "folder": false
+        },
+        {
+            "name": "1.9.4",
+            "version": "1.9.4",
+            "modded": null,
+            "url": null,
+            "folder": false
+        },
+        {
+            "name": "Hypixel Pack",
+            "version": "1.8.9",
+            "modded": "forge",
+            "url": "https://prince527github.github.io/Prince527-MC-launcher/files/versions/hypixel%20pack.json",
+            "folder": true
+        },
+        {
+            "name": "1.8.9 Forge",
+            "version": "1.8.9",
+            "modded": "forge",
+            "url": null,
+            "folder": true
+        },
+        {
+            "name": "1.8.9",
+            "version": "1.8.9",
+            "modded": null,
+            "url": null,
+            "folder": false
+        },
+        {
+            "name": "1.7.10",
+            "version": "1.7.10",
+            "modded": null,
+            "url": null,
+            "folder": false
+        },
+        {
+            "name": "1.7.10",
+            "version": "1.7.10",
+            "modded": null,
+            "url": null,
+            "folder": false
+        },
+        {
+            "name": "1.6.4",
+            "version": "1.6.4",
+            "modded": null,
+            "url": null,
+            "folder": false
+        }
+    ]
+}
