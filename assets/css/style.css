@@ -1,89 +1,9 @@
-.skeleton {
-    opacity: .7;
-    animation: skeleton-loading 1s linear infinite alternate
-}
-
-.skeleton-text {
-    width: 100%;
-    height: .5rem;
-    margin-bottom: .25rem;
-    border-radius: .125rem
-}
-
-.skeleton-text:last-child {
-    margin-bottom: 0;
-    width: 80%
-}
-
-@keyframes skeleton-loading {
-    0% {
-        background-color: #a3b7c1
-    }
-
-    100% {
-        background-color: #eff3f4
-    }
-}
-
-body {
-    background-color: #100f1c
-}
-
-* {
-    box-sizing: border-box;
-    font-family: 'Concert One', cursive;
-    text-align: center;
-    color: #fffff2
-}
-
-.btn {
-    background-color: #2e74e6;
-    color: #fffff2;
-    font-size: 16px;
-    transition-duration: .5s;
-    border: 2px solid #2e74e6;
-    border-radius: 8px;
-    font-family: 'Concert One', cursive
-}
-
-.buttons {
-    text-align: center;
-    display: flex;
-    justify-content: center
-}
-
-.btn:hover {
-    background-color: #1b6bec;
-    color: #fffff2;
-    cursor: pointer
-}
-
-#game {
-    border: 1px solid #a8ca58
-}
-
-.media-image {
-    height: 25px;
-    width: 25px
-}
-
-.download-button {
-    padding-top: 15px
-}
-
-.download-button:hover {
-    color: #251f1f;
-    cursor: pointer
-}
-
-.style-is-cool {
-    background-color: #1b1930;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 34px;
-    padding-top: 30px;
-    padding-bottom: 30px
+@font-face {
+    font-family: minecraftmedium;
+    src: url(../font/minecraft.woff2) format('woff2'), url(../font/minecraft.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
 }
 
 ::-webkit-scrollbar {
@@ -96,113 +16,136 @@ body {
     }
 }
 
-html {
-    scroll-width: none
+* {
+    font-family: minecraftmedium;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fffff2;
 }
 
-.link-h6 {
-    margin-top: 10px
+body {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
 }
 
-.link-h6:hover {
-    color: #3a2e2e;
+.buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center
+}
+
+.btn {
+    background-color: #2e74e6;
+    color: #fffff2;
+    font-size: 16px;
+    transition-duration: .5s;
+    border: 2px solid #2e74e6;
+    border-radius: 8px;
+    font-family: minecraftmedium
+}
+
+.btn:hover {
+    background-color: #1b6bec;
+    color: #fffff2;
     cursor: pointer
 }
 
-#timer {
-    text-align: center;
-    font-family: 'Concert One', cursive
-}
-
-pre code {
-    background-color: #212529;
-    border: 1px solid #1b1930;
-    display: block;
-    padding: 20px;
-    color: #f65660;
-    white-space: pre-wrap;
-    max-width: 100%;
-    height: auto;
-    overflow-x: hidden
-}
-
-@font-face {
-    font-family: 'Concert One';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(../font/VEM1Ro9xs5PjtzCu-srDqSTsjP6yuQ.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
-}
-
-@font-face {
-    font-family: 'Concert One';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(../font/VEM1Ro9xs5PjtzCu-srDqSTijP4.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-}
-
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url(../font/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2')
-}
-
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -webkit-font-feature-settings: 'liga';
-    -webkit-font-smoothing: antialiased
-}
-
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-
-#content browser {
-    margin-right: -14px !important;
-    overflow-y: scroll;
-    overflow-x: hidden
-}
-
-.icons {
-    width: 30px;
-    height: 30px;
-    color: #fff;
-    display: inline-flex;
-    align-items: center;
+.midle-div {
+    display: flex;
     justify-content: center;
-    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh
+}
+
+.sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #212529;
+    overflow-x: hidden;
+    padding-top: 20px
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
     text-decoration: none;
-    transition: background .2s
+    font-size: 18px;
+    color: #818181;
+    display: block
 }
 
-.icons:hover {
-    color: #c2b1b1
+.sidenav a:hover {
+    color: #fff
 }
 
-.removelink:link {
-    text-decoration: none
+.main {
+    margin-left: 160px;
+    padding: 0 10px
 }
 
-.removelink:visited {
-    text-decoration: none
+@media screen and (max-height:450px) {
+    .sidenav {
+        padding-top: 15px
+    }
+
+    .sidenav a {
+        font-size: 18px
+    }
 }
 
-.removelink:hover {
-    text-decoration: none
-}
+@media (orientation: portrait) {
+    .sidenav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
 
-.removelink:active {
-    text-decoration: none
+        height: auto;
+        width: auto;
+        position: relative;
+        z-index: 0;
+        top: auto;
+        left: auto;
+        overflow-x: hidden;
+        padding-top: 0px;
+    }
+
+    .sidenav a {
+        display: block;
+        font-size: 1rem;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .main {
+        margin-left: auto!important;
+        padding: 10px 10px;
+    }
+
+    @media (width <= 398px) {
+        .sidenav a {
+            font-size: 0.75rem;
+        }
+    }
+
+    @media (width <= 334px) {
+        .sidenav a {
+            font-size: 0.6rem;
+        }
+    }
+
+    @media (width <= 295px) {
+        .sidenav a {
+            font-size: 0.5rem;
+        }
+    }
 }
