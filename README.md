@@ -12,14 +12,16 @@ So you could download the [latest release](https://github.com/Prince527GitHub/Pr
 
 ## Screenshots from 3.0
 
-![0](https://serversmp.xyz/web/mclauncher/assets/image/main-menu.jpg)
+![0](https://prince527github.github.io/Prince527-MC-launcher/assets/img/main-menu.jpg)
 
-![1](https://serversmp.xyz/web/mclauncher/assets/image/offline-menu.jpg)
+![1](https://prince527github.github.io/Prince527-MC-launcher/assets/img/offline-menu.jpg)
 
-![2](https://serversmp.xyz/web/mclauncher/assets/image/login-menu.jpg)
+![2](https://prince527github.github.io/Prince527-MC-launcher/assets/img/login-menu.jpg)
 
 ![3](https://serversmp.xyz/web/mclauncher/assets/image/microsoft-login.jpg)
 
-![4](https://serversmp.xyz/web/mclauncher/assets/image/mojang-login.jpg)
+![4](https://prince527github.github.io/Prince527-MC-launcher/assets/img/microsoft-login.jpg)
 
-![5](https://serversmp.xyz/web/mclauncher/assets/image/settings-menu.jpg)
+![5](https://prince527github.github.io/Prince527-MC-launcher/assets/img/mojang-login.jpg)
+
+![6](https://prince527github.github.io/Prince527-MC-launcher/assets/img/settings-menu.jpg)
