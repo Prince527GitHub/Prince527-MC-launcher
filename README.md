@@ -18,7 +18,7 @@ So you could download the [latest release](https://github.com/Prince527GitHub/Pr
 
 ![2](https://prince527github.github.io/Prince527-MC-launcher/assets/img/login-menu.jpg)
 
-![3](https://serversmp.xyz/web/mclauncher/assets/image/microsoft-login.jpg)
+![3](https://prince527github.github.io/Prince527-MC-launcher/assets/img/microsoft-login.jpg)
 
 ![4](https://prince527github.github.io/Prince527-MC-launcher/assets/img/microsoft-login.jpg)
 
